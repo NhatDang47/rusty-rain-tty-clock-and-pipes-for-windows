@@ -113,7 +113,7 @@ Switch themes in real time using the Arrow Keys (`→` / `←`).
 
 ## 📄 License
 
-Specify your license here.
+This project is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.
 
 ---
 
