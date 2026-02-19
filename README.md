@@ -41,7 +41,7 @@ $Path = "D:\Program\Miniapp" # Change this to your folder path
 Set-Alias mx "$Path\RustyRain.exe"
 Set-Alias cl "$Path\CyberClock.exe"
 Set-Alias pp "$Path\PipesMatrix.exe"
-
+```
 
 
 ---
