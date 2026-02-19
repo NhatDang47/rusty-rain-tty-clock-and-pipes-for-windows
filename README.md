@@ -41,3 +41,16 @@ $Path = "D:\Program\Miniapp" # Change this to your folder path
 Set-Alias mx "$Path\RustyRain.exe"
 Set-Alias cl "$Path\CyberClock.exe"
 Set-Alias pp "$Path\PipesMatrix.exe"
+
+
+
+---
+
+## 🎨 Theme Gallery
+
+Explore different visual styles by pressing the Arrow Keys (`→` or `←`) in real-time.
+
+| **Deep Sea** (Default) | **Classic Matrix** | **Cyber Hell** | **Synthwave** | **Fallout** |
+| :---: | :---: | :---: | :---: | :---: |
+| ![Deep Sea Theme](./pic/1.png) | ![Classic Matrix Theme](./pic/2.png) | ![Cyber Hell Theme](./pic/3.png) | ![Synthwave Theme](./pic/4.png) | ![Fallout Theme](./pic/5.png) |
+<br>
