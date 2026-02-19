@@ -30,6 +30,7 @@ Simply run the .exe
 
 PowerShell Integration
 To access these tools quickly from anywhere, add the following aliases to your PowerShell $PROFILE:
+
 $Path = "D:\Program\Miniapp" # Change this to your folder path
 Set-Alias mx "$Path\RustyRain.exe"
 Set-Alias cl "$Path\CyberClock.exe"
