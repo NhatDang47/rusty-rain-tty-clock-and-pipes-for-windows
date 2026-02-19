@@ -1,9 +1,11 @@
 Terminal Visuals Suite
 A collection of high-performance, lightweight terminal visualizers built for the Windows Console using native Win32 API Blitting
 
-📸 Previews
-Rusty Rain,Cyber Clock,Pipes
-,,
+## 📸 Previews
+
+| **Rusty Rain** | **Cyber Clock** | **Pipes** |
+| :---: | :---: | :---: |
+| ![Matrix](./pic/matrix.png) | ![Clock](./pic/clock.png) | ![Pipes](./pic/pipes.png) |
 
 ✨ Core Features
 Native Win32 Rendering: Bypasses standard I/O for high-speed, flicker-free updates.
@@ -31,6 +33,10 @@ Simply run the .exe
 PowerShell Integration
 To access these tools quickly from anywhere, add the following aliases to your PowerShell $PROFILE:
 
+### PowerShell Integration
+To access these tools quickly from anywhere, add the following aliases to your PowerShell `$PROFILE`:
+
+```powershell
 $Path = "D:\Program\Miniapp" # Change this to your folder path
 Set-Alias mx "$Path\RustyRain.exe"
 Set-Alias cl "$Path\CyberClock.exe"
