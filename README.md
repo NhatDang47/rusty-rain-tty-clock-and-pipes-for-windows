@@ -2,121 +2,185 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Windows%20Console-blue?style=flat-square">
-  <img src="https://img.shields.io/badge/Rendering-Win32%20Blitting-orange?style=flat-square">
+  <img src="https://img.shields.io/badge/Rendering-Native%20Win32%20Blitting-orange?style=flat-square">
   <img src="https://img.shields.io/badge/Language-Python%20(ctypes)-green?style=flat-square">
+  <img src="https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square">
 </p>
 
-> **Terminal Visuals Suite** is a collection of high-performance, lightweight terminal visualizers built specifically for the Windows Console using native Win32 API blitting.  
-> Designed for speed, minimal resource usage, and real-time aesthetic customization.
+<p align="center">
+  <b>High-Performance Real-Time Terminal Visualizers for Windows</b><br>
+  Lightweight. Flicker-Free. Zero Dependencies.
+</p>
 
 ---
 
-## 📸 Visual Modules
+## ✨ Overview
 
-| **Rusty Rain** | **Cyber Clock** | **Pipes** |
-| :---: | :---: | :---: |
+**Terminal Visuals Suite** is a polished collection of real-time visual effects built exclusively for the **Windows Console**.
+
+Unlike traditional terminal applications that rely on standard output streams, this suite renders directly to the console buffer using the **native Win32 API**. The result:
+
+- Smooth animation
+- Zero flicker
+- Minimal CPU usage
+- Instant startup
+- No runtime dependencies
+
+Designed as a finished product — download and run.
+
+---
+
+## 🎬 Visual Modules
+
+| Rusty Rain | Cyber Clock | Pipes |
+|:--:|:--:|:--:|
 | ![Rusty Rain](./pic/matrix.png) | ![Cyber Clock](./pic/clock.png) | ![Pipes](./pic/pipes.png) |
 
----
+### 🟢 Rusty Rain
+A high-speed matrix-style character rain with customizable palettes.
 
-## ⚙️ Rendering Architecture
+### 🔵 Cyber Clock
+A stylized digital clock with animated visual framing.
 
-Unlike traditional console applications relying on standard output streams, this suite uses:
-
-- **Native Win32 API Blitting**
-- Direct console buffer manipulation
-- Flicker-free frame updates
-- High refresh rendering pipeline
-
-This approach ensures smooth animation performance inside the Windows Console environment.
+### 🟣 Pipes
+A dynamic procedural pipe simulation with reset capability.
 
 ---
 
-## ✨ Core Features
+## ⚙️ Rendering Engine
 
-### 🎨 Dynamic Theme Engine
-Switch between multiple color palettes in real-time:
+Terminal Visuals Suite uses:
 
-- Deep Sea (Default)  
-- Classic Matrix  
-- Cyber Hell  
-- Synthwave  
-- Fallout  
-- And more  
+- Native **Win32 Console API**
+- Direct buffer manipulation
+- Manual frame blitting
+- High refresh render loop
+- Zero stdout streaming
 
-### ⚡ Ultra Low Resource Usage
-Implemented using Python’s built-in `ctypes` (no external dependencies).  
-Typical CPU usage remains under **1%**.
+This architecture ensures stable, high-FPS animation inside the Windows Console environment.
 
-### 📦 Fully Portable
-Distributed as standalone `.exe` files.  
-No Python installation required.
+No flicker. No redraw artifacts. No hacks.
 
 ---
 
-## ⌨️ Interactive Controls
+## 🚀 Installation
 
-| Key | Action |
-|------|--------|
-| **→ (Right Arrow)** | Next color palette |
-| **← (Left Arrow)** | Previous color palette |
-| **R** | Reset simulation (Pipes only) |
-| **Q / Esc** | Exit and restore console state |
+No installation required.
 
----
+Download the `.exe` files and run.
 
-## 🚀 Usage
+```
+RustyRain.exe
+CyberClock.exe
+PipesMatrix.exe
+```
 
-Simply execute the corresponding `.exe` file.
-
-No setup. No installation. Instant launch.
+Portable. Standalone. Ready to use.
 
 ---
 
-## 🖥️ PowerShell Integration
+## 🎮 Controls
 
-For quick access from anywhere, add aliases to your PowerShell `$PROFILE`:
+| Key | Function |
+|------|----------|
+| → (Right Arrow) | Next theme |
+| ← (Left Arrow) | Previous theme |
+| R | Reset simulation (Pipes only) |
+| Q | Exit |
+| Esc | Exit |
+
+The console state is automatically restored on exit.
+
+---
+
+## 🎨 Dynamic Theme Engine
+
+Switch visual styles instantly at runtime.
+
+Available palettes include:
+
+- Deep Sea (Default)
+- Classic Matrix
+- Cyber Hell
+- Synthwave
+- Fallout
+- Additional custom palettes
+
+### Theme Preview
+
+| Deep Sea | Classic Matrix | Cyber Hell | Synthwave | Fallout |
+|:--:|:--:|:--:|:--:|:--:|
+| ![Deep Sea](./pic/1.png) | ![Classic Matrix](./pic/2.png) | ![Cyber Hell](./pic/3.png) | ![Synthwave](./pic/4.png) | ![Fallout](./pic/5.png) |
+
+Switch using:
+
+```
+←   →
+```
+
+---
+
+## ⚡ Performance
+
+- CPU usage typically under **1%**
+- No background services
+- No external libraries
+- No Python runtime required (compiled executable)
+
+Optimized for responsiveness and long runtime sessions.
+
+---
+
+## 🖥️ PowerShell Quick Access (Optional)
+
+Add aliases to your PowerShell profile for instant launch:
 
 ```powershell
-$Path = "D:\Program\Miniapp" # Update to your installation path
+$Path = "D:\Program\Miniapp"  # Update this path
 Set-Alias mx "$Path\RustyRain.exe"
 Set-Alias cl "$Path\CyberClock.exe"
 Set-Alias pp "$Path\PipesMatrix.exe"
 ```
 
-After reloading PowerShell:
+Reload PowerShell.
 
-- `mx` → Rusty Rain  
-- `cl` → Cyber Clock  
-- `pp` → Pipes  
+Then simply run:
 
----
-
-## 🎨 Theme Gallery
-
-Switch themes in real time using the Arrow Keys (`→` / `←`).
-
-| **Deep Sea (Default)** | **Classic Matrix** | **Cyber Hell** | **Synthwave** | **Fallout** |
-| :---: | :---: | :---: | :---: | :---: |
-| ![Deep Sea](./pic/1.png) | ![Classic Matrix](./pic/2.png) | ![Cyber Hell](./pic/3.png) | ![Synthwave](./pic/4.png) | ![Fallout](./pic/5.png) |
+```
+mx   # Rusty Rain
+cl   # Cyber Clock
+pp   # Pipes
+```
 
 ---
 
 ## 🛠️ Technology Stack
 
-- Python  
-- ctypes (standard library only)  
-- Native Win32 Console API  
-- Blitting-based frame rendering  
+- Python
+- ctypes (standard library only)
+- Native Win32 Console API
+- Blitting-based rendering pipeline
+
+No frameworks. No graphics libraries. Pure console control.
+
+---
+
+## 📦 System Requirements
+
+- Windows 10 / 11
+- Standard Windows Console or Windows Terminal
+- No additional dependencies
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.
+Distributed under the MIT License.
+
+See [LICENSE](./LICENSE) for details.
 
 ---
 
 <p align="center">
-  Built for terminal enthusiasts who believe the console deserves style.
+  Crafted for developers and terminal enthusiasts who believe the console deserves performance and style.
 </p>
